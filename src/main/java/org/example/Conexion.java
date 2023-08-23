@@ -12,9 +12,7 @@ public class Conexion {
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mensajes_pp",
                                                      "root",
                                                      "Metano04");
-            if (connection != null){
-                System.out.println("conexion exitosa");
-            }
+
         }catch(SQLException e){
             System.out.println(e);
         }
